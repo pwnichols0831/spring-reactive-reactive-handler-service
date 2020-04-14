@@ -1,0 +1,17 @@
+server:
+   port: 8084
+# JSON Pretty Print
+spring:
+    jackson:
+       serialization:
+          indent_output: true
+    main:
+       banner-mode: "off"
+
+logging:
+  level:
+    root: WARN
+    org.springframework.web: WARN
+    com.clc.reactive: DEBUG
+  file: logs/reactive-handler-service.log
+  
